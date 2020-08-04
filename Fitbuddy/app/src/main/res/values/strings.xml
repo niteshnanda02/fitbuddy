@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">FitBuddy</string>
+    <string name="emailregistration">Sign up with email</string>
+    <string name="number">Mobile no.</string>
+    <string name="email">Email</string>
+    <string name="age">Age</string>
+    <string name="gender">Gender</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="profession">Profession</string>
+    <string name="level">Proficiency level</string>
+    <string name="signup">Not an account? signup</string>
+    <string name="focus">Focus Area</string>
+    <string name="focus1">Loose weight</string>
+    <string name="focus2">Get tones body</string>
+    <string name="focus3">Build mass/muscle</string>
+    <string name="time">Preferred Workout time</string>
+    <string name="time1">7:45-8:30 AM</string>
+    <string name="time2">8:45-9:30 AM</string>
+    <string name="time3">6:30-7-15 PM</string>
+    <string name="time4">7:30-8:15 PM</string>
+    <string name="time5">Other</string>
+    <string name="workout">Preferred Fitness workout</string>
+    <string name="workout1">Gym exercises</string>
+    <string name="workout2">Yoga</string>
+    <string name="workout3">Aerobic</string>
+    <string name="workout4">Other</string>
+    <string name="details">User Details</string>
+    <string name="useradd">User Add</string>
+    <string name="fitness">Fitness</string>
+    <string name="zumba">Zumba</string>
+    <string name="yoga">Yoga</string>
+    <string name="aerobic">Aerobics</string>
+    <string name="availabe_slot">List of current available slots</string>
+    <string name="btn_slot">Book your slot</string>
+    <string name="future_slot">Select a slot for future</string>
+    <string name="select">The selected Date and time is :-</string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+    <string name="notification">Notifications from Admin</string>
+    <string name="welcome">Welcome back!</string>
+    <string name="home">Home</string>
+    <string name="add">Add</string>
+    <string name="user">User</string>
+    <string name="sessionweek">sessions this week</string>
+    <string name="chooseSession">Choose your\nsessions</string>
+    <string name="splashbutton">Get Started</string>
+    <string name="signuppage">Signup with number</string>
+    <string name="alreadyregistered">Already onboard?</string>
+    <string name="login">Log in</string>
+    <string name="welcome_signuptext">Sign up with</string>
+    <string name="welcome_phone_btn">Phone Number</string>
+    <string name="welcome_text">Welcome to Fit Buddy</string>
+    <string name="welcome_text_below">Create an account and start\nyour fitness journey</string>
+    <string name="welcome_text_start">Get Started with</string>
+    <string name="loginpage">Login with number</string>
+    <string name="verifynumber">Verify your number</string>
+    <string name="sendotp">Sent OTP on</string>
+    <string name="otpbtn">Continue</string>
+    <string name="user_age">Years old</string>
+    <string name="user_height">Height</string>
+    <string name="user_weight">Weight</string>
+    <string name="user_tab1">Upcoming Sessions</string>
+    <string name="user_tab2">Sessions Done</string>
+    <string name="schedule">Schedules</string>
+    <string name="selectplan">Select your plan</string>
+    <string name="invite">Invite your friends</string>
+    <string name="invitedescription">You and your friend will recieve credits as soon as the invite download the app</string>
+    <string name="pack">Fitness Pack:</string>
+    <string name="discount">Discount:</string>
+    <string name="total">Total:</string>
+    <string name="checkout_btn">Proceed to pay</string>
+    <string-array name="profession_array">
+        <item>"Student"</item>
+        <item>"Office going"</item>
+        <item>"Homemaker"</item>
+        <item>"Business/ entrepreneur"</item>
+        <item>"Retired"</item>
+        <item>"Others"</item>
+    </string-array>
+
+    <string-array name="proficiency_level">
+        <item>"Beginner"</item>
+        <item>"Intermediate"</item>
+        <item>"Expert"</item>
+        <item>"Champion"</item>
+    </string-array>
+</resources>

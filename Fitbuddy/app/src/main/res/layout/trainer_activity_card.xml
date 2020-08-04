@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    style="@style/Base.CardView"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="15dp"
+    android:clickable="true"
+    app:cardUseCompatPadding="true">
+    <RelativeLayout
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/trainer_activity_exercise_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:text="fndsgunfdgunf"
+            android:fontFamily="@font/museo700regular"></TextView>
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/trainer_activity_exercise_name"
+            android:id="@+id/trainer_activity_exercise_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:text="fndsgunfdgunf"
+            android:fontFamily="@font/museo700regular"></TextView>
+
+        <TextView
+            android:paddingRight="5dp"
+            android:gravity="end"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/trainer_activity_exercise_name"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/trainer_activity_exercise_date"
+            android:id="@+id/trainer_activity_exercise_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:text="fndsgunfdgunf"
+            android:fontFamily="@font/museo700regular"></TextView>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

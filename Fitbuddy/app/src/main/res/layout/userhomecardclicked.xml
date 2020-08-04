@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:src="@drawable/background"
+                android:scaleType="fitXY"
+                android:layout_height="match_parent"></ImageView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+            <TextView
+                android:textColor="@color/white"
+                android:paddingLeft="20dp"
+                android:id="@+id/exercise_name"
+                android:fontFamily="@font/museo700regular"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center|start"
+                android:layout_weight="1"></TextView>
+            <TextView
+                android:fontFamily="@font/museo500"
+                android:textColor="@color/white"
+                android:paddingLeft="20dp"
+                android:text="Choose a session"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:layout_gravity="start"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"></TextView></LinearLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/round_layout"
+        android:paddingTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+        <include
+            android:id="@+id/available_exercise_list"
+            layout="@layout/available_exercise"></include>
+    </LinearLayout>
+</LinearLayout>

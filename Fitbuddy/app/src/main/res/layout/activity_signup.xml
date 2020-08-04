@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".loginsignup.signupActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/signuppage"
+            android:gravity="center"
+            android:fontFamily="@font/museo700regular"
+            style="@style/TextAppearance.AppCompat.Headline"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <EditText
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:fontFamily="@font/museo500"
+                android:id="@+id/signup_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Name"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true"></EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <EditText
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:fontFamily="@font/museo500"
+                android:id="@+id/signup_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Email"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true"></EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/second_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:fontFamily="@font/museo500"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="+91"></TextView>
+
+                <EditText
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:fontFamily="@font/museo500"
+
+                    android:id="@+id/signup_number"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:hint="Enter your number"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:maxLines="1"
+
+                    android:singleLine="true"></EditText>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+            <Button
+                android:backgroundTint="@color/colorPrimary"
+                android:background="@drawable/round"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:id="@+id/signupwithemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign up"
+                android:fontFamily="@font/museo500"
+                android:textAllCaps="false"></Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <TextView
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:gravity="end"
+                android:fontFamily="@font/museo500"
+                android:text="@string/alreadyregistered"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"></TextView>
+            <TextView
+                android:onClick="taketoLogin"
+                android:fontFamily="@font/museo500"
+                android:paddingLeft="5dp"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/login"
+                android:layout_gravity="start"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"></TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

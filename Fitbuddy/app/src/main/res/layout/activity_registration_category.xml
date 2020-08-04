@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    tools:context=".loginsignup.RegistrationCategoryActivity"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent">
+    <LinearLayout
+        android:id="@+id/first_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:orientation="vertical"
+            android:weightSum="4">
+
+            <TextView
+                android:fontFamily="@font/museo700regular"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingStart="5dp"
+                android:text="@string/focus"></TextView>
+
+            <RadioGroup
+                android:id="@+id/focus_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp">
+
+                <RadioButton
+                    android:fontFamily="@font/museo500"
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:id="@+id/focus1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingStart="15dp"
+                    android:text="@string/focus1"></RadioButton>
+
+                <RadioButton
+                    android:fontFamily="@font/museo500"
+                    android:id="@+id/focus2"
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingStart="15dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/focus2"></RadioButton>
+
+                <RadioButton
+                    android:fontFamily="@font/museo500"
+                    android:id="@+id/focus3"
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingStart="15dp"
+                    android:text="@string/focus3"></RadioButton>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+            android:orientation="vertical">
+
+            <TextView
+                android:fontFamily="@font/museo700regular"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingStart="5dp"
+                android:text="@string/workout"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+
+                android:orientation="vertical"
+                android:paddingStart="20dp"
+                android:paddingTop="8dp">
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:fontFamily="@font/museo500"
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:id="@+id/workout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingStart="15dp"
+                    android:text="@string/workout1"></androidx.appcompat.widget.AppCompatCheckBox>
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:fontFamily="@font/museo500"
+                    android:id="@+id/workout2"
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingStart="15dp"
+                    android:text="@string/workout2"></androidx.appcompat.widget.AppCompatCheckBox>
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:fontFamily="@font/museo500"
+                    android:id="@+id/workout3"
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingStart="15dp"
+                    android:text="@string/workout3"></androidx.appcompat.widget.AppCompatCheckBox>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal"
+                    >
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:fontFamily="@font/museo500"
+                        android:layout_gravity="start"
+                        android:id="@+id/workout4"
+                        style="@style/TextAppearance.AppCompat.Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="15dp"
+                        android:text="@string/workout4"></androidx.appcompat.widget.AppCompatCheckBox>
+                    <EditText
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:visibility="invisible"
+                        android:id="@+id/other_workout"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:fontFamily="@font/museo500"
+                        style="@style/TextAppearance.AppCompat.Medium"
+                        ></EditText>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.3"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <TextView
+                    android:fontFamily="@font/museo700regular"
+                    style="@style/TextAppearance.AppCompat.Headline"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingStart="5dp"
+                    android:text="@string/time"></TextView>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp">
+
+                <RadioGroup
+                    android:orientation="vertical"
+                    android:id="@+id/time_radio_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    >
+
+                    <RadioButton
+                        android:fontFamily="@font/museo500"
+                        style="@style/TextAppearance.AppCompat.Medium"
+                        android:id="@+id/time1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:paddingStart="15dp"
+                        android:text="@string/time1"></RadioButton>
+
+                    <RadioButton
+                        android:fontFamily="@font/museo500"
+                        android:id="@+id/time2"
+                        style="@style/TextAppearance.AppCompat.Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:paddingStart="15dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/time2"></RadioButton>
+
+                    <RadioButton
+                        android:fontFamily="@font/museo500"
+                        android:id="@+id/time3"
+                        style="@style/TextAppearance.AppCompat.Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:paddingStart="15dp"
+                        android:text="@string/time3"></RadioButton>
+
+                    <RadioButton
+                        android:fontFamily="@font/museo500"
+                        android:id="@+id/time4"
+                        style="@style/TextAppearance.AppCompat.Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:paddingStart="15dp"
+                        android:text="@string/time4"></RadioButton>
+
+                        <RadioButton
+                            android:fontFamily="@font/museo500"
+                            android:id="@+id/time5"
+                            style="@style/TextAppearance.AppCompat.Medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"  android:paddingStart="15dp"
+                            android:text="@string/time5"></RadioButton>
+
+
+                </RadioGroup>
+                    <EditText
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:visibility="invisible"
+                        android:layout_toRightOf="@id/time_radio_group"
+                        android:layout_alignParentBottom="true"
+                        android:id="@+id/other_time"
+                        android:layout_width="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:layout_toLeftOf="@id/registration_floating_btn"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/museo500"
+                        style="@style/TextAppearance.AppCompat.Medium"
+                        ></EditText>
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
+                        android:clickable="true"
+                        android:elevation="16dp"
+                        android:focusable="true"
+                        android:src="@drawable/send"
+                        android:id="@+id/registration_floating_btn"
+                        android:background="?selectableItemBackground"
+                        android:layout_alignParentBottom="true"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

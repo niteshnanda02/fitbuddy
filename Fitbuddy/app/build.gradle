@@ -1,0 +1,80 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.FitBuddy.fitbuddy"
+        minSdkVersion 23
+        targetSdkVersion 29
+        versionCode 2
+        versionName "2.0"
+        vectorDrawables.useSupportLibrary = true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    def firebase_version = "16.0.4"
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation "com.google.firebase:firebase-storage:19.1.1"
+    implementation "com.google.firebase:firebase-auth:19.3.2"
+    implementation "com.google.firebase:firebase-database:19.3.1"
+    implementation 'com.google.firebase:firebase-firestore:21.5.0'
+    implementation "com.google.firebase:firebase-messaging:20.2.3"
+    implementation 'com.google.firebase:firebase-dynamic-links:19.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    implementation 'com.google.android.material:material:1.1.0'
+
+    //otp screen
+    implementation 'com.github.aabhasr1:OtpView:v1.1.2'
+
+    //bottom navigation bar
+    implementation 'com.github.ibrahimsn98:SmoothBottomBar:1.7.6'
+
+    //object mapper
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.9.8';
+
+    //lifecycle
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
+
+    //feedback and rating
+    implementation 'com.stepstone.apprating:app-rating:2.3.1'
+
+    //viewPager2
+    implementation "androidx.viewpager2:viewpager2:1.0.0"
+    //roundedimageview
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
+    // retrofit library
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    // Retrofit API Interceptor for Debuging
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    implementation 'com.squareup.okhttp3:okhttp:3.4.1'
+
+    // paytm all in one sdk
+    implementation 'com.paytm.appinvokesdk:appinvokesdk:1.2'
+
+    //progress button
+    implementation 'br.com.simplepass:loading-button-android:2.2.0'
+
+}
